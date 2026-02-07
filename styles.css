@@ -288,12 +288,16 @@ h4 { font-size: 1.25rem; }
 
 /* ===== Main Section ===== */
 .main-container {
+  max-width: 1200px;
+}
+
+.about-grid {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 1024px) {
-  .main-container {
+  .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 4rem;
@@ -309,6 +313,19 @@ h4 { font-size: 1.25rem; }
 
 @media (min-width: 768px) {
   .main-images {
+    padding: 4rem 2rem;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-images {
+    padding: 0;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .main-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -321,7 +338,7 @@ h4 { font-size: 1.25rem; }
     grid-template-rows: repeat(2, 1fr);
 
   }
-}
+} */
 
 .main-images img {
   width: 100%;
@@ -358,7 +375,7 @@ h4 { font-size: 1.25rem; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .member-card {
@@ -366,7 +383,7 @@ h4 { font-size: 1.25rem; }
   flex-direction: column;
   align-items: center;
   width: 80%;
-  border: 2px solid var(--foreground);
+/*   border: 2px solid var(--foreground); */
   border-radius: 2rem;
   padding: 1rem;
 }
@@ -405,7 +422,7 @@ h4 { font-size: 1.25rem; }
 @media (min-width: 1024px) {
   .member-cards-grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    gap: 1rem;
   }
 }
 
